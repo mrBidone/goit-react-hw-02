@@ -1,4 +1,4 @@
-const Feedback = ({ good, neutral, bad, updateFeedback }) => {
+const Feedback = ({ good, neutral, bad, updateFeedback, setFeedback }) => {
   return (
     <>
       <ul>
@@ -16,6 +16,9 @@ const Feedback = ({ good, neutral, bad, updateFeedback }) => {
           <button type="button" onClick={() => updateFeedback("bad")}>
             Bad
           </button>
+        </li>
+        <li>
+          <button type="button">Reset</button>
         </li>
       </ul>
       <ul>

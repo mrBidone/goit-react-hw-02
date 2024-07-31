@@ -29,6 +29,7 @@ function App() {
         bad={feedback.bad}
         totalFeedback={totalFeedback}
         updateFeedback={updateFeedback}
+        setFeedback={setFeedback}
       />
     </>
   );
