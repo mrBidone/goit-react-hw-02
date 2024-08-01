@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  gap: 5px;
+  padding: 0;
+}
+
+.button {
+  padding: 10px;
+  font-size: 15px;
+}

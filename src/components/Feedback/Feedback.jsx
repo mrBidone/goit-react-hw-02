@@ -1,30 +1,14 @@
-const Feedback = ({ good, neutral, bad, updateFeedback, setFeedback }) => {
+import css from "./Feedback.module.css";
+
+const Feedback = ({ good, neutral, bad, totalFeedback, positiveFeedback }) => {
   return (
     <>
-      <ul>
-        <li>
-          <button type="button" onClick={() => updateFeedback("good")}>
-            Good
-          </button>
-        </li>
-        <li>
-          <button type="button" onClick={() => updateFeedback("neutral")}>
-            Neutral
-          </button>
-        </li>
-        <li>
-          <button type="button" onClick={() => updateFeedback("bad")}>
-            Bad
-          </button>
-        </li>
-        <li>
-          <button type="button">Reset</button>
-        </li>
-      </ul>
-      <ul>
+      <ul className={css.list}>
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>
+        <li>Total: {totalFeedback} </li>
+        <li>Positive: {positiveFeedback}%</li>
       </ul>
     </>
   );
